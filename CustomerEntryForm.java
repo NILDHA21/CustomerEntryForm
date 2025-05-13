@@ -42,6 +42,7 @@ public class CustomerEntryForm {
 		driver.findElement(By.id("signature")).sendKeys("C:\\\\Users\\\\Admin\\\\Downloads\\\\Tester.jpg");
 		driver.findElement(By.id("terms")).click();
 		driver.findElement(By.cssSelector("#submitBtn")).click();
+		System.out.println("Thank you! Your form is submitted successfully.");
 	}
 }
 

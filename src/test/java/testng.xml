@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="VerizonEntryForm" parallel="false">
+    <test name="TestName">
+        <classes>
+            <class name="com.ibs.wwd.testcase.TC_001_LoginTest"/>
+            <class name="com.ibs.wwd.testcase.TC_002_AddToCartTest"/>
+        </classes>
+    </test>
+</suite>

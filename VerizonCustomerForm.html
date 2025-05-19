@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verizon Customer Entry Form</title>
+</head>
+<body>
+    <h2>Verizon Customer Entry Form</h2>
+    <form id="verizonCustomerForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="customerId">Customer ID:</label><br>
+            <input type="text" id="customerId" name="customerId"><br><br>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact & Address</legend>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Service Details</legend>
+            <label for="plan">Select Plan:</label><br>
+            <select id="plan" name="plan">
+                <option value="">--Choose Plan--</option>
+                <option value="Unlimited Plus">Unlimited Plus</option>
+                <option value="5G Start">5G Start</option>
+                <option value="Prepaid Unlimited">Prepaid Unlimited</option>
+            </select><br><br>
+
+            <label for="simNumber">SIM Card Number:</label><br>
+            <input type="text" id="simNumber" name="simNumber"><br><br>
+
+            <label for="deviceIMEI">Device IMEI:</label><br>
+            <input type="text" id="deviceIMEI" name="deviceIMEI"><br><br>
+
+            <label for="activationDate">Activation Date:</label><br>
+            <input type="date" id="activationDate" name="activationDate"><br><br>
+
+            <label for="porting">Port Number From Another Carrier:</label>
+            <input type="checkbox" id="porting" name="porting"><br><br>
+
+            <label for="prevCarrier">Previous Carrier (if porting):</label><br>
+            <input type="text" id="prevCarrier" name="prevCarrier"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Documents</legend>
+            <label for="idProof">Upload ID Proof:</label><br>
+            <input type="file" id="idProof" name="idProof"><br><br>
+
+            <label for="signature">Digital Signature (image):</label><br>
+            <input type="file" id="signature" name="signature"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms & Submit</legend>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to Verizon’s Terms and Conditions.</label><br><br>
+
+            <input type="submit" id="submitBtn" value="Submit Application">
+        </fieldset>
+    </form>
+</body>
+</html>
